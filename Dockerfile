@@ -1,8 +1,8 @@
 # A container for building D applications.
 #
-# VERSION 0.0.2
+# VERSION 0.0.3
 
-FROM daprlabs/archlinux
+FROM cslusher/archlinux
 MAINTAINER Craig Slusher <cslush@gmail.com>
 
-RUN pacman --noconfirm -S dmd dtools libphobos-devel dub
+RUN pacman --noconfirm -S dmd dtools dub gdb
